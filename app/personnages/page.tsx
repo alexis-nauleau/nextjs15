@@ -12,7 +12,8 @@ export default async function Personnages() {
                 {personnages.map((personnage) => (
                     <li key={personnage.id}>
                         {personnage.nom}
-                        <Link href={`/personnages/personnage/${personnage.nom}`}><button type="submit" className="px-2 py-1 mx-2  rounded-full bg-green-400 text-white h-7 w-7">
+                        <Link href={`/personnages/personnage/${personnage.nom}`}>
+                        <button type="submit" className="px-2 py-1 mx-2  rounded-full bg-green-400 text-white h-7 w-7">
                                 +
                             </button></Link>
                         <form action={supprimerPersonnage} method="POST" style={{ display: 'inline' }}>
